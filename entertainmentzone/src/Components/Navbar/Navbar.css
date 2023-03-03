@@ -1,0 +1,16 @@
+.nav-container {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    box-shadow: 0 1px 10px black;
+    color: white;
+    background-color: #39445a;
+    z-index: 2;
+    cursor: pointer;
+    font-size: 5vw;
+    letter-spacing: 2px;
+    font-family: "Montserrat", sans-serif;
+}

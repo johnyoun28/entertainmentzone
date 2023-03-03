@@ -1,0 +1,6 @@
+.page_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 0 6% 0;
+}

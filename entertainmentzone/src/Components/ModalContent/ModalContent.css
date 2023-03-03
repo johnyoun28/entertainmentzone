@@ -1,0 +1,116 @@
+.modal_container {
+    height: 100%;
+    width: 100%;
+}
+.modal_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.modal_poster {
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.modal_backdrop {
+    display: none;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.right {
+    padding: 10px;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    /* justify-content: space-evenly; */
+    font-weight: 300;
+}
+
+.overview_content {
+    align-self: center;
+    border-radius: 20px;
+    font-size: 20px;
+    height: 45%;
+    padding: 15px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow-y: scroll;
+}
+
+
+.modal_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: white;
+}
+
+.modal_tag {
+    color: white;
+    padding-bottom: 10px;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.modal_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin-top: 20px;
+    background-color: rgb(193, 22, 107);
+    color: white;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.modal_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 830px) {
+    .modal_wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow-y: scroll; /* y-axis scrollbar no overflow */
+    }
+
+    .modal_wrapper::-webkit-scrollbar {
+        display: none; /* hide scrollbar while scrolling down */
+      }
+
+    .modal_poster {
+        display: none;
+    }
+    .modal_backdrop {
+        display: flex;
+    }
+
+    .overview_content {
+        height: 40%;
+        font-size: 18px;
+    }
+
+    .right {
+        display: flex;
+        justify-content: space-evenly;
+        height: 90%;
+        width: 95%;
+    }
+
+}

@@ -1,13 +1,23 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
+import { Route, Routes } from 'react-router-dom'
+import Trending from './Pages/Trending/Trending'
+import Navbar from './Components/Navbar/Navbar'
+import Footer from './Components/Footer/Footer'
+import { Container } from '@mui/material';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-      <h1>Test</h1>
+      <Navbar/>
+      <Container>
+        <Routes>
+        <Route path='/' element={<Trending />}></Route>
+        </Routes>
+
+      </Container>
+      <Footer/>
     </div>
   )
 }
