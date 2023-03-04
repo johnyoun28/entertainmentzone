@@ -14,3 +14,10 @@
     letter-spacing: 2px;
     font-family: "Montserrat", sans-serif;
 }
+
+
+@media (max-width: 455px) {
+    .nav-container {
+        padding-bottom: 15px;
+    }
+}

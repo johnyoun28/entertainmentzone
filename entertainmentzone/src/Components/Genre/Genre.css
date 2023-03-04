@@ -1,0 +1,9 @@
+.genre_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    width: 100%;
+ 
+}
