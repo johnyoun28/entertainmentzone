@@ -1,11 +1,11 @@
 import React from 'react'
 import Movie from './Movie'
 
-const MoviesList = (props) => {
+const MoviesList = ({ movies }) => {
   return (
     <div className='single_content'>
         {
-            props.movies.map(result => (
+            movies.map(result => (
                 <Movie key={result.id} result={result}/>
             ))
         }

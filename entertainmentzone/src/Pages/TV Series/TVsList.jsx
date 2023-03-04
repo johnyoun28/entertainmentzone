@@ -1,11 +1,11 @@
 import React from 'react'
 import TV from './TV'
 
-const TVsList = (props) => {
+const TVsList = ( {tvs} ) => {
   return (
     <div className='single_content'>
         {
-            props.tvs.map(result => (
+            tvs.map(result => (
                 <TV key={result.id} result={result}/>
             ))
         }

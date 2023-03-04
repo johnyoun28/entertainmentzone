@@ -1,11 +1,11 @@
 import React from 'react'
 import Trend from './Trend'
 
-const TrendingList = (props) => {
+const TrendingList = ( {trend} ) => {
   return (
     <div className='single_content'>
         {
-            props.trend.map(result => (
+            trend.map(result => (
                 <Trend key={result.id} result={result}/>
             ))
         }
