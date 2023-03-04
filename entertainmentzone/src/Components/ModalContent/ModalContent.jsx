@@ -33,7 +33,8 @@ export default function ModalContent({ children, type, id}) {
 
 
   const poster ='https://image.tmdb.org/t/p/w500/'
-  const unava =  "https://user-images.githubusercontent.com/10515204/56117400-9a911800-5f85-11e9-878b-3f998609a6c8.jpg";
+  const landscapeUnava =  "https://user-images.githubusercontent.com/10515204/56117400-9a911800-5f85-11e9-878b-3f998609a6c8.jpg";
+  const unava =   "https://www.movienewz.com/img/films/poster-holder.jpg"
 
 
 
@@ -77,7 +78,7 @@ export default function ModalContent({ children, type, id}) {
               <div className="modal_container">
                     <div className="modal_wrapper">
                  
-                        <img alt={content.movie} className='modal_backdrop' src={content.backdrop_path === null ? `${unava}` : `${poster}.${content.backdrop_path}` }/>
+                        <img alt={content.movie} className='modal_backdrop' src={content.backdrop_path === null ? `${landscapeUnava}` : `${poster}.${content.backdrop_path}` }/>
                         <img alt={content.movie} className='modal_poster' src={content.poster_path === null ? `${unava}` : `${poster}.${content.poster_path}` }/>
                      
                       <div className="right">
