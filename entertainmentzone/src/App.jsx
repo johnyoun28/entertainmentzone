@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar/Navbar'
 import Footer from './Components/Footer/Footer'
 import { Container } from '@mui/material';
 import Movies from './Pages/Movies/Movies'
+import TVs from './Pages/TV Series/TVs'
 
 function App() {
 
@@ -14,7 +15,8 @@ function App() {
       <Navbar/>
       <Container>
         <Routes>
-          <Route path='/movies' element={<Movies />}></Route>
+        <Route path='/series' element={<TVs />}></Route>
+        <Route path='/movies' element={<Movies />}></Route>
         <Route path='/' element={<Trending />}></Route>
         </Routes>
 
