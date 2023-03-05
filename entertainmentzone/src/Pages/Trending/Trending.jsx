@@ -26,14 +26,15 @@ const Trending = () => {
     },[page])
 
   return (
+    
       <div className='trending-container'>
 
         <h2>TRENDING TODAY</h2>        
         <TrendingList trend={trend}/>
-        {pageNum > 1 && <Pagination setPage={setPage} pageNum={pageNum} />}
         
-
+        {pageNum > 1 && <Pagination setPage={setPage} pageNum={pageNum} />}
     </div>
+    
   )
 }
 
