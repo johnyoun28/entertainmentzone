@@ -19,16 +19,10 @@
   
   }
   
-  @media (max-width: 650px) {
-    .page_container {
-        margin-bottom: 10%;
-    }
-  
-  }
-  
   @media (max-width: 500px) {
     .page_container {
-        margin-bottom: 10%;
+        margin-bottom: 11%;
     }
   
   }
+  
