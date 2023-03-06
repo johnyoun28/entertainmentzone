@@ -14,7 +14,7 @@
 .modal_poster {
     object-fit: contain;
     border-radius: 10px;
-    width: 40%;
+    width: 45%;
 }
 
 .modal_backdrop {
@@ -45,6 +45,10 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     overflow-y: scroll;
 }
+
+.overview_content::-webkit-scrollbar {
+    display: none; /* hide scrollbar while scrolling down */
+  }
 
 
 .modal_title {
@@ -111,6 +115,13 @@
         justify-content: space-evenly;
         height: 90%;
         width: 95%;
+        padding: 0;
     }
 
+}
+
+@media (max-width: 500px) {
+    .right {
+        height: 80%;
+    }
 }
