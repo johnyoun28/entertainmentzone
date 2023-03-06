@@ -82,13 +82,13 @@ export default function ModalContent({ children, type, id}) {
                         <img alt={content.movie} className='modal_poster' src={content.poster_path === null ? `${unava}` : `${poster}.${content.poster_path}` }/>
                      
                       <div className="right">
-                        <h2 className='modal_title'>{content.title || content.name} (
+                        <span className='modal_title'>{content.title || content.name} (
                     {(
                       content.first_air_date ||
                       content.release_date ||
                       "N/A"
                     ).substring(0, 4)}
-                    ) </h2>
+                    ) </span>
                         <span className='modal_tag'> {content.tagline} </span>
                        
                     

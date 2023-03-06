@@ -57,6 +57,7 @@
     align-items: center;
     font-size: 32px;
     color: white;
+    margin-bottom: 10px;
 }
 
 .modal_tag {
@@ -103,11 +104,13 @@
     }
     .modal_backdrop {
         display: flex;
+        
     }
 
     .overview_content {
         height: 40%;
         font-size: 18px;
+        
     }
 
     .right {
